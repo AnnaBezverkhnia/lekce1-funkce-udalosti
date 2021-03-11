@@ -18,13 +18,16 @@ function secti(a, b) {
  */
 function upozorni() {
   alert("Gratulace, právě jsi spustila tuto funkci!");
+  console.log("Gratulace, právě jsi spustila tuto funkci!");
+  document.querySelector('.ctverecek').innerHTML =   "Gratulace, právě jsi spustila tuto funkci!";
+  document.querySelector('.ctverecek').style.width = '500px';
   
 }
 
 function barva() {
-  let squareColorChange = document.querySelector('.ctverecek').style.backgroundColor = 'green';
+  document.querySelector('.ctverecek').style.backgroundColor = 'green';
 }
 
 function zobrazVysledek() {
-  let showResult = document.querySelector('#vysledek').innerHTML = secti(4, 5);
+  document.querySelector('#vysledek').innerHTML = secti(4, 5);
 }
