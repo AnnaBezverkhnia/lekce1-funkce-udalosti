@@ -1,7 +1,5 @@
 // tady je místo pro náš program
 
-
-
 /**
  * Sečte dvě čísla na vstupu a vrátí výsledek
  *
@@ -16,10 +14,12 @@ function secti(a, b) {
 /**
  * Upozorní uživatele při spuštění.
  */
+let text = 'Gratulace, právě jsi spustila tuto funkci!';
+
 function upozorni() {
-  alert("Gratulace, právě jsi spustila tuto funkci!");
-  console.log("Gratulace, právě jsi spustila tuto funkci!");
-  document.querySelector('.ctverecek').innerHTML =   "Gratulace, právě jsi spustila tuto funkci!";
+  alert(text);
+  console.log(text);
+  document.querySelector('.ctverecek').innerHTML =   text;
   document.querySelector('.ctverecek').style.width = '500px';
   
 }
