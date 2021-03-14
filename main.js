@@ -14,18 +14,20 @@ function secti(a, b) {
 /**
  * Upozorní uživatele při spuštění.
  */
-let text = 'Gratulace, právě jsi spustila tuto funkci!';
+
+let square = document.querySelector('.ctverecek');
 
 function upozorni() {
+  let text = 'Gratulace, právě jsi spustila tuto funkci!';
   alert(text);
   console.log(text);
-  document.querySelector('.ctverecek').innerHTML =   text;
-  document.querySelector('.ctverecek').style.width = '500px';
+  square.innerHTML =   text;
+  square.style.width = '500px';
   
 }
 
 function barva() {
-  document.querySelector('.ctverecek').style.backgroundColor = 'green';
+  square.style.backgroundColor = 'green';
 }
 
 function zobrazVysledek() {
